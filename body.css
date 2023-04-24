@@ -1,0 +1,613 @@
+/*----------------narvbar-----------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  /* ---------color------- */
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: black;
+
+
+  --textiary-color: rgb(121, 121, 121);
+  --first-color: #7425ec;
+
+  /* -----------shadow------------- */
+  --web-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  /* ----------space--------- */
+  --all-space: 20px 20%;
+
+  /* ----------boldness--------- */
+  --boldness: 500;
+
+  /* ----------size--------- */
+  --text-size: 15px;
+  --icon-size: 20px;
+
+  /* ------------who i am page------ */
+  --main-page-fontSize: 50px;
+}
+
+.dark-theme{
+  --primary-color: black;
+  --secondary-color: white;
+
+  --primaryLight-color: #0e0e0e;
+  --secondarydark-color: rgb(240, 240, 240);
+
+  
+}
+
+
+.light-theme{
+  --secondary-color: black;
+  --primary-color: white;
+
+  --primaryLight-color: rgb(240, 240, 240);
+  --secondarydark-color: #2a2a2a;
+
+}
+
+body{
+  background-color: var(--primary-color);
+}
+
+
+header {
+  overflow: hidden;
+  background-color: var(--primary-color);
+  box-shadow: rgba(221, 221, 221, 0.2) 0px 2px 8px 0px;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--all-space);
+  font-size: var(--text-size);
+}
+
+header h4 {
+  display: inline-block;
+  cursor: pointer;
+  font-size: var(--icon-size);
+  color: var(--secondary-color);
+}
+
+header h4:hover {
+  color: var(--first-color);
+}
+
+ ul li {
+  display: inline-block;
+  padding: 0 10px;
+  font-weight: var(--boldness);
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+header ul li:hover {
+  color: var(--first-color);
+}
+
+div i {
+  padding: 0 10px;
+  font-size: var(--icon-size);
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+div i:hover {
+  color: var(--first-color);
+}
+
+/* ------------------------who-i-am--------------------------- */
+
+.who-i-am {
+  display: grid;
+  padding: 150px 20% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.me {
+  font-size: var(--main-page-fontSize);
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.auto-type {
+  font-size: var(--main-page-fontSize);
+  font-weight: bold;
+  color: var(--first-color);
+}
+
+.des {
+  font-size: 30px;
+  font-weight: var(--boldness);
+  color: var(--secondary-color);
+}
+
+.des1 {
+  font-size: 15px;
+  font-weight: var(--boldness);
+  color: var(--textiary-color);
+  width: 70%;
+  text-align: start;
+}
+
+.resume {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.btn {
+  padding: 20px;
+  background-color: var(--first-color);
+  border-radius: 20px;
+  border: none;
+  color: var(--primary-color);
+  font-weight: var(--boldness);
+  font-size: var(--text-size);
+  cursor: pointer;
+}
+
+.nav-icons {
+  margin-left: 10px;
+}
+
+.nav-icons .uil{
+  font-size: 30px;
+  padding: 0 5px;
+  color: var(--secondary-color);
+}
+
+.home__blob {
+  fill: var(--first-color);
+}
+
+.home__blob-img {
+  width: 100%;
+}
+
+.svg {
+  width: 75%;
+}
+
+/* <!----------------------- about section-----------------------> */
+
+#about {
+}
+
+.about-flex {
+  display: grid;
+  text-align: justify;
+  justify-content: center;
+  grid-template-columns: 600px;
+  margin: 20px 20% 0;
+}
+
+#about h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 100px;
+  color: var(--secondary-color);
+  
+}
+
+#about p {
+  text-align: center;
+  color: var(--textiary-color);
+  font-size: 15px;
+}
+
+.about-flex p {
+  font-size: var(--text-size);
+}
+
+.about-flex img {
+  width: 70%;
+}
+
+/* ----------------Experience-------------- */
+.Experience {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  justify-content: center;
+}
+
+.Experience h2 {
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: var(--primaryLight-color);
+  color: var(--secondarydark-color);
+  margin: 0 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.Experience p {
+  padding: 10px 0 5px;
+}
+
+/* ----------------------- tab titles-------------- */
+.tab-titles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.tab-titles p {
+  font-weight: var(--boldness);
+  color: var(--third-color);
+}
+
+/* ----------------Qualification--------------- */
+
+#Qualification {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#Qualification h2 {
+  font-size: 30px;
+}
+
+#Qualification p {
+  text-align: center;
+  font-size: 13px;
+  color: var(--fourth-color);
+}
+
+/* -------------skills---------------- */
+#skills {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 100px;
+}
+
+#skills h3{
+  color: var(--secondary-color);
+}
+
+#sub-text {
+  text-align: center;
+  font-size: 13px;
+  color: var(--textiary-color);
+}
+
+.skills-flex {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  margin-bottom: 70px;
+  margin-top: 50px;
+  justify-content: center;
+  align-content: center;
+}
+
+.skills-flex h4 {
+  font-weight: 500;
+  font-size: 16px;
+  padding-top: 15px;
+  color: var(--secondary-color);
+}
+
+.skills1 {
+  background-color: var(--primaryLight-color);
+  color: var(--secondarydark-color);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 20px;
+  margin: 20px 20px;
+  padding: 50px 30px;
+  text-align: center;
+  align-items: center;
+  transition: transform 0.5s;
+}
+
+
+.skills1:hover{
+  transform: scale(1.1);
+}
+
+.flex-sub {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.flex-sub i {
+  color: var(--first-color);
+}
+
+.flex-sub h4 {
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.flex-sub p {
+  font-size: 13px;
+  text-align: left;
+  padding-left: 35px;
+  color: var(--textiary-color);
+}
+
+
+/* ------------------service page-------------- */
+
+#servces h2{
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+#servces p{
+  text-align: center;
+  color: var(--textiary-color);
+}
+.Service-flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 20%;
+}
+
+.sflex{
+    display: grid;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: var(--primaryLight-color);
+    color: var(--secondarydark-color);
+    margin: 0 10px;
+    padding: 30px;
+    text-align: left;
+    justify-content: center;
+    color: white;
+    /* transition: transform 0.5s; */
+}
+
+.sflex:hover{
+  /* transform: scale(1.1); */
+}
+
+.sflex i{
+    font-size: 50px;
+    color: var(--first-color);
+}
+
+.sflex h5{
+    font-size: 25px;
+    font-weight: 300px;
+    color: var(--secondary-color);
+}
+
+.sflex span{
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+    padding-top: 15px;
+    color: var(--secondary-color);
+}
+
+.sflex span i{
+    font-size: 30px;
+}
+
+
+
+/* --------------service preview---------------- */
+.services-preview{
+  position: fixed;
+  top: 0; left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(68, 66, 66, 0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+
+.services-preview .service{
+  padding: 5rem 1.5rem;
+  text-align: left;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: relative;
+  margin: 3rem;
+  display: none;
+  border-radius: 20px;
+}
+
+.services-preview .service.active{
+  display: inline-block;
+}
+
+.service-head{
+  padding-left: 15px;
+  font-size: 30px;
+  padding-bottom: 20px ;
+}
+
+
+.uil-times{
+  position: absolute;
+  top: 1rem; right: 1.5rem;
+  font-size: 3rem;
+  color: var(--secondary-color);
+}
+
+.uil-times:hover{
+  transform: rotate(60deg);
+  transition: all 0.2s;
+}
+
+.service span{
+  display: block;
+  text-align: left;
+  padding-top: 20px;
+}
+.service span i{
+    padding: 0;
+    font-size: 20px;
+    text-align: left;
+}
+
+
+
+/* ---------------porfolio-------------------- */
+
+#portfolio h2{
+  text-align: center;
+  padding-top: 100px;
+  font-size: 30px;
+  color: var(--secondary-color);
+}
+
+#portfolio p{
+  text-align: center;
+  padding-bottom: 20px;
+  color: var(--textiary-color);
+}
+
+.img-box img{
+  max-width: 100%;
+  z-index: -1;
+}
+
+.slider-container .container{
+  padding: 0 15px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+
+.card-slider{
+  padding: 100px 0;
+}
+
+/* --------------------contact------------------ */
+#contact{
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+#contact h2,p{
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+#contact p{
+  padding-bottom: 50px;
+  font-size: 13px;
+  color: var(--textiary-color);
+}
+
+
+.contact-flex{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px 20% 0;
+}
+
+.contact-left span{
+  padding-top:20px ;
+  display: block;
+  font-size: 20px;
+  color: var(--secondary-color);
+}
+
+.social-icons i{
+  font-size: 30px;
+  padding: 20px 10px;
+  padding-bottom: 50px;
+}
+
+
+.contact-btn{
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+
+/* --------------contact right-------------------- */
+form{
+  background-color: var(--primaryLight-color);
+  color: var(--secondarydark-color);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+form input, textarea{
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 100%;
+  background-color: var(--primaryLight-color);
+  color: var(--secondarydark-color);
+  border: none;
+  border-bottom: 1px solid;
+  border-color: rgb(228, 228, 228);
+  outline: none;
+}
+
+.contact-btn2{
+  width: 100%;
+  padding: 15px 25px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+
+
+/* ----------------copy write-------------------- */
+.copywright {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-image:linear-gradient(45deg, black, rgb(46, 2, 46));
+    font-weight: 300;
+    font-family: Roboto;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.bi {
+    flex: 40%;
+    font-size: 30px;
+    margin-left: 50px;
+    color: white;
+}
+
+.copywright p {
+    font-size: 15px;
+    color: white;
+}
+
+.bi {
+  color: white;;
+}
+
+.bi:hover {
+  color: white;
+}
+
